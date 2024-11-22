@@ -27,6 +27,21 @@
         background: var(--dl-color-theme-neutral-light);
 
         fill: var(--dl-color-theme-neutral-dark);
+
+        .container {
+          height: 200px;
+          position: relative;
+          border: 3px solid green;
+        }
+
+        .center {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
       }
     </style>
     <link
@@ -81,7 +96,11 @@
                     </span>
                      <br />
                      <br />
-                    <button onclick="window.location.href='projects.html'">Our Projects</button>
+                        <div class="container">
+                        <div class="center">
+                        <button onclick="window.location.href='projects.html'">Our Projects</button>
+                        </div>
+                        </div>
                   </fragment>
                 </h3>
               </div>
